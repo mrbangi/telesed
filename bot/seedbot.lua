@@ -224,9 +224,11 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
-    "admin"
+    "admin",
+    "antibot",
+    "plugins",
     },
-    sudo_users = {164059631},--Sudo users
+    sudo_users = {187769689},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[poker team project
