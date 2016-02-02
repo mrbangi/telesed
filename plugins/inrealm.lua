@@ -460,7 +460,7 @@ function run(msg, matches)
 		chat_info(receiver, returnids, {receiver=receiver})
 	end
 
-    if matches[1] == 'creategroup' and matches[2] then
+    if matches[1] == 'newgp' and matches[2] then
         group_name = matches[2]
         group_type = 'group'
         return create_group(msg)
@@ -658,7 +658,7 @@ end
 
 return {
   patterns = {
-    "^[!/](creategroup) (.*)$",
+    "^[!/](newgp) (.*)$",
     "^[!/](createrealm) (.*)$",
     "^[!/](setabout) (%d+) (.*)$",
     "^[!/](setrules) (%d+) (.*)$",
@@ -679,6 +679,19 @@ return {
         "^[!/](log)$",
         "^[!/](help)$",
         "^!!tgservice (.+)$",
+         "^([Nn]ewgp) (.*)$",
+    "^([Ss]etabout) (%d+) (.*)$",
+    "^([Ss]etrules) (%d+) (.*)$",
+    "^([Ss]etname) (%d+) (.*)$",
+    "^([Ll]ock) (%d+) (.*)$",
+    "^([Uu]nlock) (%d+) (.*)$",
+    "^([Ss]etting) (%d+)$",
+    "^([Ww]holist)$",
+    "^([Ww]ho)$",
+    "^([Aa]ddadmin) (.*)$", -- sudoers only
+    "^([Rr]emoveadmin) (.*)$", -- sudoers only
+    "^([Ll]ist) (.*)$",
+    "^([Ll]og)$",
   },
   run = run
 }
