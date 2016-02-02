@@ -1254,9 +1254,27 @@ return {
   "^[!/](kickinactive) (%d+)$",
   "%[(photo)%]",
   "^!!tgservice (.+)$",
+   "^([Aa]dd)$",
+   "^([Rr]em)$",
+   "^([Rr]ules)$",
+   "^([Ss]etname) (.*)$",
+   "^([Ss]etphoto)$",
+   "^([Pp]romote) (.*)$",
+   "^([Hh]elp)$",
+   "^([Dd]emote) (.*)$",
+   "^([Ss]et) ([^%s]+) (.*)$",
+   "^([Ll]ock) (.*)$",
+   "^([Ss]etowner) (%d+)$",
+   "^([Oo]wner)$",
+   "^([Rr]es) (.*)$",
+   "^([Uu]nlock) (.*)$",
+   "^([Ss]etflood) (%d+)$",
+   "^([Ss]ettings)$",
+   "^([Mm]odlist)$",
+   "^([Nn]ewlink)$",
+   "^([Ll]ink)$",
   },
   run = run
 }
 end
-
 
